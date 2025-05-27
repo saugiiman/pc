@@ -5,8 +5,9 @@ on:
 
 jobs:
   build:
-    name: Start Building...
+    name: Start Remote Desktop
     runs-on: windows-latest
+    timeout-minutes: 360 # max for free accounts is 360 (6 hours)
     steps:
       - name: Downloading & Installing Essentials
         run: |
